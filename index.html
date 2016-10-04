@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample bookshelf app with VanillaJS</title>
+    <link href="//cdn.muicss.com/mui-0.8.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.8.1/js/mui.min.js"></script>
+    <link href="/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <script id="book_card_template" type="text/template">
+    </script>
+    <script id="search_template" type="text/template">
+        <div class="mui-col-md-8 mui-col-md-offset-1">
+            <div class="mui-textfield">
+                <input type="text" id="search_input" placeholder="Search term">
+            </div>
+        </div>
+        <div class="mui-col-md-2">
+            <button id="search_button" class="mui-btn mui-btn--primary search_btn">Search</button>
+        </div>
+    </script>
+    <ul class="mui-tabs__bar">
+        <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="search-pane">Search</a></li>
+        <li><a data-mui-toggle="tab" data-mui-controls="my-pane">My Collection</a></li>
+    </ul>
+    <div class="mui-tabs__pane mui--is-active" id="search-pane">
+        <div id="search"></div>
+        <div id="search-results" class="mui-container-fluid">
+        </div>
+    </div>
+    <div class="mui-tabs__pane" id="my-pane">
+        <div id="saved-books" class="mui-container-fluid">
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>

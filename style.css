@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto';
+}
+
+.mui-tabs__pane {
+    margin-top: 25px;
+}
+
+.notify {
+    width: 300px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 15px;
+    background-color: #fcf8e3;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.4);
+}
+.notify_container {
+    padding: 0px 5px 20px 10px;
+}
+.notify_header {
+    text-align: right;
+    line-height: 1;
+    font-size: 28px;
+}
+.notify_header .close {
+    cursor: pointer;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    padding: 4px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.card_title {
+    max-height: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card_cover {
+    max-height: 200px;
+}
+.card_author {
+    max-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    max-width: calc(100% - 14px);
+}
+.card a {
+    color: inherit;
+    display: block;
+}
+.card a:hover {
+    text-decoration: none;
+}
+.card_buttons {
+    position: absolute;
+    bottom: 85px;
+    right: 65px;
+}
+.card_button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px !important;
+    font-size: 30px;
+    font-family: serif;
+    color: #ffffff !important;
+    backface-visibility: hidden;
+    transition: 0.4s ease-out;
+}
+.add-button {
+    background-color: #28f1ab !important;
+    transform: rotateY(0deg);
+}
+.add-button::after {
+    content: '+';
+}
+.added-button {
+    line-height: 1;
+    background-color: #00ff04 !important;
+    transform: rotateY(-180deg);
+}
+.added-button::after {
+    content: '\2714';
+}
+
+.added .add-button {
+    transform: rotateY(180deg);
+}
+
+.added .added-button {
+    transform: rotateY(0deg);
+}
+.remove-button {
+    display: none;
+    background-color: #fd3500 !important;
+    font-size: 32px;
+    line-height: 60px;
+}
+.remove-button::after {
+    content: '\2716';
+}
+.remove .add-button {
+    display: none;
+}
+.remove .added-button {
+    display: none;
+}
+.remove .remove-button {
+    display: block;
+}
+
+.search_btn {
+    width: 120px;
+    text-align: center;
+}
